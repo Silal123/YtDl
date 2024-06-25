@@ -22,6 +22,9 @@ jobs:
       - name: Run PyInstaller
         run: |
           python -m PyInstaller --onefile loader.py
+      - name: Print files
+        run: |
+          ls
       - uses: actions/upload-artifact@v2
         with:
           name: Windows_qwiklabs
