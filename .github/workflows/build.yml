@@ -21,7 +21,7 @@ jobs:
           pip install pyinstaller
       - name: Run PyInstaller
         run: |
-          python -m PyInstaller loader.spec
+          python -m PyInstaller --onefile loader.py
       - uses: actions/upload-artifact@v2
         with:
           name: Windows_qwiklabs
