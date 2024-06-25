@@ -23,7 +23,7 @@ jobs:
           pip install pyinstaller
       - name: Run PyInstaller
         run: |
-          python -m PyInstaller --onefile loader.py
+          python -m PyInstaller --onefile loader.py --icon icon.ico
       - name: Print files
         run: |
           ls
