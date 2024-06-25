@@ -28,7 +28,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Windows_qwiklabs
-          path: loader.exe
+          path: build/loader.exe
 
       - name: create release
         id: create_release
