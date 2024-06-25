@@ -25,6 +25,10 @@ jobs:
       - name: Print files
         run: |
           ls
+          echo 2
+          ls build
+          echo 3
+          ls dist
       - uses: actions/upload-artifact@v2
         with:
           name: Windows_qwiklabs
